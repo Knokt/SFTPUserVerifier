@@ -23,13 +23,13 @@ Here's a rundown what you need to edit:
 1. Server IP
 2. Server Port
 3. Users to test
-    users    = []UserInfo{
-		{User: "user1", Password: "password1"}, 
-		{User: "user2", Password: "password2"},
-		// ... add more users as needed
-	}
+users    = []UserInfo{
+	{User: "user1", Password: "password1"}, 
+	{User: "user2", Password: "password2"},
+	// ... add more users as needed
+}
 4. ServerTestFilePath - Where the test file is uploaded - Should be writable by user like '/files/test.bin'  
 5. SSH Configuration: Update the SSH configuration parameters. Check naming from https://github.com/sshnet/SSH.NET
-            KeyExchanges: []string{"ENTER KEX HERE"}, // example "diffie-hellman-group16-sha512"
-			Ciphers:      []string{"ENTER CIPHER HERE"},
-			MACs:         []string{"ENTER MAC HERE"}
+- KeyExchanges: []string{"ENTER KEX HERE"}, // example "diffie-hellman-group16-sha512"
+- Ciphers:      []string{"ENTER CIPHER HERE"},
+- MACs:         []string{"ENTER MAC HERE"}
